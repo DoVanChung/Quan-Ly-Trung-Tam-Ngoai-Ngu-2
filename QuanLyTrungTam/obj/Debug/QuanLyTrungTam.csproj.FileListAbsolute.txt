@@ -1,0 +1,46 @@
+c:\users\admin\documents\visual studio 2013\Projects\QuanLyTrungTam\QuanLyTrungTam\bin\Debug\QuanLyTrungTam.exe.config
+c:\users\admin\documents\visual studio 2013\Projects\QuanLyTrungTam\QuanLyTrungTam\bin\Debug\QuanLyTrungTam.exe
+c:\users\admin\documents\visual studio 2013\Projects\QuanLyTrungTam\QuanLyTrungTam\bin\Debug\QuanLyTrungTam.pdb
+c:\users\admin\documents\visual studio 2013\Projects\QuanLyTrungTam\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.csprojResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2013\Projects\QuanLyTrungTam\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.Properties.Resources.resources
+c:\users\admin\documents\visual studio 2013\Projects\QuanLyTrungTam\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.csproj.GenerateResource.Cache
+c:\users\admin\documents\visual studio 2013\Projects\QuanLyTrungTam\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.exe
+c:\users\admin\documents\visual studio 2013\Projects\QuanLyTrungTam\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.pdb
+c:\users\admin\documents\visual studio 2013\Projects\QuanLyTrungTam\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.frmMain.resources
+c:\users\admin\documents\visual studio 2013\Projects\QuanLyTrungTam\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.frmGV.resources
+c:\users\admin\documents\visual studio 2013\Projects\QuanLyTrungTam\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.frmSV.resources
+c:\users\admin\documents\visual studio 2013\Projects\QuanLyTrungTam\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.frmchaomung.resources
+c:\users\admin\documents\visual studio 2013\Projects\QuanLyTrungTam\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.frmlop.resources
+C:\Users\Admin\Desktop\QuanLyTrungTam\QuanLyTrungTam\bin\Debug\QuanLyTrungTam.exe.config
+C:\Users\Admin\Desktop\QuanLyTrungTam\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.exe
+C:\Users\Admin\Desktop\QuanLyTrungTam\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.pdb
+C:\Users\admin\Downloads\KetNoi1Ti (1)\QuanLyTrungTam\QuanLyTrungTam\bin\Debug\QuanLyTrungTam.exe.config
+C:\Users\admin\Downloads\KetNoi1Ti (1)\QuanLyTrungTam\QuanLyTrungTam\bin\Debug\QuanLyTrungTam.exe
+C:\Users\admin\Downloads\KetNoi1Ti (1)\QuanLyTrungTam\QuanLyTrungTam\bin\Debug\QuanLyTrungTam.pdb
+C:\Users\admin\Downloads\KetNoi1Ti (1)\QuanLyTrungTam\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.csproj.AssemblyReference.cache
+C:\Users\admin\Downloads\KetNoi1Ti (1)\QuanLyTrungTam\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.frmchaomung.resources
+C:\Users\admin\Downloads\KetNoi1Ti (1)\QuanLyTrungTam\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.frmlop.resources
+C:\Users\admin\Downloads\KetNoi1Ti (1)\QuanLyTrungTam\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.frmMain.resources
+C:\Users\admin\Downloads\KetNoi1Ti (1)\QuanLyTrungTam\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.frmSV.resources
+C:\Users\admin\Downloads\KetNoi1Ti (1)\QuanLyTrungTam\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.Properties.Resources.resources
+C:\Users\admin\Downloads\KetNoi1Ti (1)\QuanLyTrungTam\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.frmGV.resources
+C:\Users\admin\Downloads\KetNoi1Ti (1)\QuanLyTrungTam\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.csproj.GenerateResource.cache
+C:\Users\admin\Downloads\KetNoi1Ti (1)\QuanLyTrungTam\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.csproj.CoreCompileInputs.cache
+C:\Users\admin\Downloads\KetNoi1Ti (1)\QuanLyTrungTam\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.exe
+C:\Users\admin\Downloads\KetNoi1Ti (1)\QuanLyTrungTam\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.pdb
+C:\Users\admin\Downloads\KetNoi1Ti (1)\QuanLyTrungTam\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.frmsinhviencon.resources
+C:\Users\admin\Downloads\KetNoi1Ti (1)\QuanLyTrungTam\btl\QuanLyTrungTam\bin\Debug\QuanLyTrungTam.exe.config
+C:\Users\admin\Downloads\KetNoi1Ti (1)\QuanLyTrungTam\btl\QuanLyTrungTam\bin\Debug\QuanLyTrungTam.exe
+C:\Users\admin\Downloads\KetNoi1Ti (1)\QuanLyTrungTam\btl\QuanLyTrungTam\bin\Debug\QuanLyTrungTam.pdb
+C:\Users\admin\Downloads\KetNoi1Ti (1)\QuanLyTrungTam\btl\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.csproj.AssemblyReference.cache
+C:\Users\admin\Downloads\KetNoi1Ti (1)\QuanLyTrungTam\btl\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.frmchaomung.resources
+C:\Users\admin\Downloads\KetNoi1Ti (1)\QuanLyTrungTam\btl\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.frmlop.resources
+C:\Users\admin\Downloads\KetNoi1Ti (1)\QuanLyTrungTam\btl\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.frmMain.resources
+C:\Users\admin\Downloads\KetNoi1Ti (1)\QuanLyTrungTam\btl\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.frmsinhviencon.resources
+C:\Users\admin\Downloads\KetNoi1Ti (1)\QuanLyTrungTam\btl\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.frmSV.resources
+C:\Users\admin\Downloads\KetNoi1Ti (1)\QuanLyTrungTam\btl\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.Properties.Resources.resources
+C:\Users\admin\Downloads\KetNoi1Ti (1)\QuanLyTrungTam\btl\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.frmGV.resources
+C:\Users\admin\Downloads\KetNoi1Ti (1)\QuanLyTrungTam\btl\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.csproj.GenerateResource.cache
+C:\Users\admin\Downloads\KetNoi1Ti (1)\QuanLyTrungTam\btl\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.csproj.CoreCompileInputs.cache
+C:\Users\admin\Downloads\KetNoi1Ti (1)\QuanLyTrungTam\btl\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.exe
+C:\Users\admin\Downloads\KetNoi1Ti (1)\QuanLyTrungTam\btl\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.pdb
