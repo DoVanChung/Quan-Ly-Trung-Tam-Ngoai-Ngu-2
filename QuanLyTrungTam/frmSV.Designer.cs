@@ -76,10 +76,11 @@
             // 
             // btntim
             // 
+            this.btntim.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btntim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btntim.Location = new System.Drawing.Point(554, 6);
+            this.btntim.Location = new System.Drawing.Point(533, 6);
             this.btntim.Name = "btntim";
-            this.btntim.Size = new System.Drawing.Size(102, 37);
+            this.btntim.Size = new System.Drawing.Size(123, 37);
             this.btntim.TabIndex = 9;
             this.btntim.Text = "Tìm kiếm";
             this.btntim.UseVisualStyleBackColor = true;

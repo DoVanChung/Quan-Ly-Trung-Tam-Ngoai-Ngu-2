@@ -34,10 +34,10 @@ namespace QuanLyTrungTam
         public DataTable SelectData(string sql, List<CustomParameter> lstParameter)
         {
             try
-            {             
+            {
                 conn.Open();
-                sql = "exec SELECTALLHOCVIEN";
                 cmd = new SqlCommand(sql, conn);
+                cmd.CommandType = CommandType.StoredProcedure;
                 foreach (var para in lstParameter)
                 {
                     cmd.Parameters.AddWithValue(para.key, para.value);

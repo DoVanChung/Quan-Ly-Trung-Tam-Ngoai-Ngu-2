@@ -37,7 +37,7 @@ namespace QuanLyTrungTam
             dgvsinhvien.DataSource = null; // reset lai csdl
             //load toan bo danh sach hoc vien khi form duoc load
             //khai bao list custom parameter 
-            dgvsinhvien.DataSource = new database().SelectData(null, null);
+            dgvsinhvien.DataSource = new database().SelectData("SELECTALLHOCVIEN", lstPara);
 
             //dat ten cot
             dgvsinhvien.Columns["MaHocVien"].HeaderText = "Mã HV";
