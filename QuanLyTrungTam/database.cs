@@ -38,6 +38,10 @@ namespace QuanLyTrungTam
                 conn.Open();
                 sql = "exec SELECTALLHOCVIEN";
                 cmd = new SqlCommand(sql, conn);
+                foreach (var para in lstParameter)
+                {
+                    cmd.Parameters.AddWithValue(para.key, para.value);
+                }
                 dt = new DataTable();
                 dt.Load(cmd.ExecuteReader());
                 return dt;

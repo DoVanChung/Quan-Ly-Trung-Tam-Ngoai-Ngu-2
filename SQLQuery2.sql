@@ -56,8 +56,19 @@ Insert into BangHocVien
 		 N'Địa chỉ nhà của Chung',
 		 0789736619
 )
+-- Xóa Học Viên              EXECUTE CẢ CÁI NÀY NỮA
+create procedure deleteHV
+	@MaHocVien int
+AS
+BEGIN
+	DELETE from BangHocVien
+	WHERE [MaHocVien] = @MaHocVien
+END
 
-CREATE PROCEDURE SELECTALLHOCVIEN -- tạo cái này để lấy toàn bộ học viên
+
+-- tạo cái này để lấy toàn bộ học viên và sắp xếp tìm kiếm    EXECUTE LẠI CÁI NÀY VÀO SQL TRƯỚC NHA
+CREATE PROCEDURE SELECTALLHOCVIEN 
+	@tukhoa int
 AS
 	select 
 		MaHocVien,
@@ -70,6 +81,10 @@ AS
 		DiaChi,
 		SoDienThoai
 	from BangHocVien
+	where 
+		lower(MaHocVien) like '%'+lower(RTRIM(LTRIM(@tukhoa))) + '%'
+		or lower(HoTen) like '%'+lower(RTRIM(LTRIM(@tukhoa))) + '%'
+		or lower(SoDienThoai) like '%'+lower(RTRIM(LTRIM(@tukhoa))) + '%'
 GO;
 
 exec SELECTALLHOCVIEN
@@ -142,6 +157,7 @@ BEGIN
 	from BangHocVien
 	where MaHocVien = @MaHocVien;
 END 
+
  
 --Tao sequence tu dong tang cho ma giao vien 
 Select * from BangGiaoVien

@@ -44,3 +44,17 @@ C:\Users\admin\Downloads\KetNoi1Ti (1)\QuanLyTrungTam\btl\QuanLyTrungTam\obj\Deb
 C:\Users\admin\Downloads\KetNoi1Ti (1)\QuanLyTrungTam\btl\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.csproj.CoreCompileInputs.cache
 C:\Users\admin\Downloads\KetNoi1Ti (1)\QuanLyTrungTam\btl\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.exe
 C:\Users\admin\Downloads\KetNoi1Ti (1)\QuanLyTrungTam\btl\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.pdb
+C:\Users\Admin\Documents\GitHub\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\bin\Debug\QuanLyTrungTam.exe.config
+C:\Users\Admin\Documents\GitHub\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.exe
+C:\Users\Admin\Documents\GitHub\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.pdb
+C:\Users\Admin\Documents\GitHub\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\bin\Debug\QuanLyTrungTam.exe
+C:\Users\Admin\Documents\GitHub\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\bin\Debug\QuanLyTrungTam.pdb
+C:\Users\Admin\Documents\GitHub\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.frmchaomung.resources
+C:\Users\Admin\Documents\GitHub\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.frmlop.resources
+C:\Users\Admin\Documents\GitHub\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.frmMain.resources
+C:\Users\Admin\Documents\GitHub\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.frmsinhviencon.resources
+C:\Users\Admin\Documents\GitHub\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.frmSV.resources
+C:\Users\Admin\Documents\GitHub\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.Properties.Resources.resources
+C:\Users\Admin\Documents\GitHub\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.frmGV.resources
+C:\Users\Admin\Documents\GitHub\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.csproj.GenerateResource.Cache
