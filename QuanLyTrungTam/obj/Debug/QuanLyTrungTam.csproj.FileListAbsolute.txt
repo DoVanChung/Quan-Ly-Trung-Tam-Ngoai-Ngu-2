@@ -58,3 +58,18 @@ C:\Users\Admin\Documents\GitHub\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj
 C:\Users\Admin\Documents\GitHub\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.Properties.Resources.resources
 C:\Users\Admin\Documents\GitHub\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.frmGV.resources
 C:\Users\Admin\Documents\GitHub\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.csproj.GenerateResource.Cache
+D:\Bài tập lập trình\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\bin\Debug\QuanLyTrungTam.exe.config
+D:\Bài tập lập trình\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\bin\Debug\QuanLyTrungTam.exe
+D:\Bài tập lập trình\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\bin\Debug\QuanLyTrungTam.pdb
+D:\Bài tập lập trình\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.csproj.AssemblyReference.cache
+D:\Bài tập lập trình\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.frmchaomung.resources
+D:\Bài tập lập trình\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.frmlop.resources
+D:\Bài tập lập trình\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.frmMain.resources
+D:\Bài tập lập trình\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.frmsinhviencon.resources
+D:\Bài tập lập trình\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.frmSV.resources
+D:\Bài tập lập trình\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.Properties.Resources.resources
+D:\Bài tập lập trình\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.frmGV.resources
+D:\Bài tập lập trình\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.csproj.GenerateResource.cache
+D:\Bài tập lập trình\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.csproj.CoreCompileInputs.cache
+D:\Bài tập lập trình\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.exe
+D:\Bài tập lập trình\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.pdb
