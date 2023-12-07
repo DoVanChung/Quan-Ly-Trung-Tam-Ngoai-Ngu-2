@@ -77,3 +77,4 @@ D:\Bài tập lập trình\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debu
 D:\Bài tập lập trình\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.frmngoaingu.resources
 D:\Bài tập lập trình\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.ngoaingucon.resources
 D:\Bài tập lập trình\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.frmlopcon.resources
+D:\Bài tập lập trình\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.frmdangnhap.resources
