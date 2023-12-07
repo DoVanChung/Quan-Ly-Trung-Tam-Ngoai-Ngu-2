@@ -73,3 +73,7 @@ D:\Bài tập lập trình\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debu
 D:\Bài tập lập trình\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.csproj.CoreCompileInputs.cache
 D:\Bài tập lập trình\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.exe
 D:\Bài tập lập trình\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.pdb
+D:\Bài tập lập trình\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.frmgiaoviencon.resources
+D:\Bài tập lập trình\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.frmngoaingu.resources
+D:\Bài tập lập trình\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.ngoaingucon.resources
+D:\Bài tập lập trình\Quan-Ly-Trung-Tam-Ngoai-Ngu-2\QuanLyTrungTam\obj\Debug\QuanLyTrungTam.frmlopcon.resources

@@ -31,7 +31,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnthoat = new System.Windows.Forms.Button();
-            this.btntrogiup = new System.Windows.Forms.Button();
+            this.btnngoaingu = new System.Windows.Forms.Button();
             this.btnlop = new System.Windows.Forms.Button();
             this.btnhocvien = new System.Windows.Forms.Button();
             this.btngiaovien = new System.Windows.Forms.Button();
@@ -53,14 +53,14 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.LightGray;
             this.panel3.Controls.Add(this.btnthoat);
-            this.panel3.Controls.Add(this.btntrogiup);
+            this.panel3.Controls.Add(this.btnngoaingu);
             this.panel3.Controls.Add(this.btnlop);
             this.panel3.Controls.Add(this.btnhocvien);
             this.panel3.Controls.Add(this.btngiaovien);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1025, 37);
+            this.panel3.Size = new System.Drawing.Size(1025, 38);
             this.panel3.TabIndex = 6;
             // 
             // btnthoat
@@ -71,28 +71,29 @@
             this.btnthoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnthoat.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnthoat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(48)))), ((int)(((byte)(70)))));
-            this.btnthoat.Location = new System.Drawing.Point(509, 0);
+            this.btnthoat.Location = new System.Drawing.Point(537, 0);
             this.btnthoat.Name = "btnthoat";
-            this.btnthoat.Size = new System.Drawing.Size(100, 37);
+            this.btnthoat.Size = new System.Drawing.Size(100, 38);
             this.btnthoat.TabIndex = 5;
             this.btnthoat.Text = "Thoát";
             this.btnthoat.UseVisualStyleBackColor = false;
             this.btnthoat.Click += new System.EventHandler(this.button4_Click);
             // 
-            // btntrogiup
+            // btnngoaingu
             // 
-            this.btntrogiup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
-            this.btntrogiup.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btntrogiup.FlatAppearance.BorderSize = 0;
-            this.btntrogiup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btntrogiup.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btntrogiup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(48)))), ((int)(((byte)(70)))));
-            this.btntrogiup.Location = new System.Drawing.Point(409, 0);
-            this.btntrogiup.Name = "btntrogiup";
-            this.btntrogiup.Size = new System.Drawing.Size(100, 37);
-            this.btntrogiup.TabIndex = 4;
-            this.btntrogiup.Text = "Trợ giúp";
-            this.btntrogiup.UseVisualStyleBackColor = false;
+            this.btnngoaingu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
+            this.btnngoaingu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnngoaingu.FlatAppearance.BorderSize = 0;
+            this.btnngoaingu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnngoaingu.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btnngoaingu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(48)))), ((int)(((byte)(70)))));
+            this.btnngoaingu.Location = new System.Drawing.Point(409, 0);
+            this.btnngoaingu.Name = "btnngoaingu";
+            this.btnngoaingu.Size = new System.Drawing.Size(128, 38);
+            this.btnngoaingu.TabIndex = 4;
+            this.btnngoaingu.Text = "Ngoại Ngữ";
+            this.btnngoaingu.UseVisualStyleBackColor = false;
+            this.btnngoaingu.Click += new System.EventHandler(this.btntrogiup_Click);
             // 
             // btnlop
             // 
@@ -104,7 +105,7 @@
             this.btnlop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(48)))), ((int)(((byte)(70)))));
             this.btnlop.Location = new System.Drawing.Point(244, 0);
             this.btnlop.Name = "btnlop";
-            this.btnlop.Size = new System.Drawing.Size(165, 37);
+            this.btnlop.Size = new System.Drawing.Size(165, 38);
             this.btnlop.TabIndex = 3;
             this.btnlop.Text = "Lớp ngọai ngữ";
             this.btnlop.UseVisualStyleBackColor = false;
@@ -120,7 +121,7 @@
             this.btnhocvien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(48)))), ((int)(((byte)(70)))));
             this.btnhocvien.Location = new System.Drawing.Point(122, 0);
             this.btnhocvien.Name = "btnhocvien";
-            this.btnhocvien.Size = new System.Drawing.Size(122, 37);
+            this.btnhocvien.Size = new System.Drawing.Size(122, 38);
             this.btnhocvien.TabIndex = 2;
             this.btnhocvien.Text = "Học viên";
             this.btnhocvien.UseVisualStyleBackColor = false;
@@ -136,7 +137,7 @@
             this.btngiaovien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(48)))), ((int)(((byte)(70)))));
             this.btngiaovien.Location = new System.Drawing.Point(0, 0);
             this.btngiaovien.Name = "btngiaovien";
-            this.btngiaovien.Size = new System.Drawing.Size(122, 37);
+            this.btngiaovien.Size = new System.Drawing.Size(122, 38);
             this.btngiaovien.TabIndex = 1;
             this.btngiaovien.Text = "Giảng viên";
             this.btngiaovien.UseVisualStyleBackColor = false;
@@ -179,13 +180,12 @@
 
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button btntrogiup;
+        private System.Windows.Forms.Button btnngoaingu;
         private System.Windows.Forms.Button btnlop;
         private System.Windows.Forms.Button btnhocvien;
         private System.Windows.Forms.Button btngiaovien;
         private System.Windows.Forms.Button btnthoat;
         private System.Windows.Forms.DataGridView dgvmain;
-
     }
 }
 

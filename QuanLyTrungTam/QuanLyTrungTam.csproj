@@ -53,17 +53,35 @@
     <Compile Include="frmchaomung.Designer.cs">
       <DependentUpon>frmchaomung.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmgiaoviencon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmgiaoviencon.Designer.cs">
+      <DependentUpon>frmgiaoviencon.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmlop.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmlop.Designer.cs">
       <DependentUpon>frmlop.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmlopcon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlopcon.Designer.cs">
+      <DependentUpon>frmlopcon.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmngoaingu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmngoaingu.Designer.cs">
+      <DependentUpon>frmngoaingu.cs</DependentUpon>
     </Compile>
     <Compile Include="frmsinhviencon.cs">
       <SubType>Form</SubType>
@@ -77,6 +95,12 @@
     <Compile Include="frmSV.Designer.cs">
       <DependentUpon>frmSV.cs</DependentUpon>
     </Compile>
+    <Compile Include="ngoaingucon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ngoaingucon.Designer.cs">
+      <DependentUpon>ngoaingucon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="frmGV.cs">
@@ -88,17 +112,29 @@
     <EmbeddedResource Include="frmchaomung.resx">
       <DependentUpon>frmchaomung.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmgiaoviencon.resx">
+      <DependentUpon>frmgiaoviencon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmlop.resx">
       <DependentUpon>frmlop.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmlopcon.resx">
+      <DependentUpon>frmlopcon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmngoaingu.resx">
+      <DependentUpon>frmngoaingu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmsinhviencon.resx">
       <DependentUpon>frmsinhviencon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSV.resx">
       <DependentUpon>frmSV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ngoaingucon.resx">
+      <DependentUpon>ngoaingucon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

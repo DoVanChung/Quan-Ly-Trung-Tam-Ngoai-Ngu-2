@@ -96,7 +96,7 @@ namespace QuanLyTrungTam
                 }
                 else
                 {
-                    MessageBox.Show("Xóa Giảng Viên Thất Bại!", "Thông Báo");
+                    MessageBox.Show("Xóa Học Viên Thất Bại!", "Thông Báo");
                 }
 
             }

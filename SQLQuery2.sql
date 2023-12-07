@@ -1,6 +1,6 @@
 ﻿--Tao co so du lieu
-CREATE DATABASE QuanLyTrungTamNgoaiNguV7
-USE QuanLyTrungTamNgoaiNguV7
+CREATE DATABASE QuanLyTrungTamNgoaiNguV10
+USE QuanLyTrungTamNgoaiNguV10
 
 
 CREATE TABLE BangGiaoVien
@@ -23,20 +23,29 @@ CREATE TABLE BangHocVien
     SoDienThoai VARCHAR(10) NOT NULL UNIQUE
 )
 
+CREATE TABLE BangNgoaiNgu 
+(
+	MaNgoaiNgu INT PRIMARY KEY,
+	TenNgoaiNgu NVARCHAR(30) UNIQUE NOT NULL
+)
+
 CREATE TABLE BangLop
 (
     MaLop INT PRIMARY KEY,
     TenLop NVARCHAR(30) UNIQUE NOT NULL,
     MaGiaoVien INT NOT NULL REFERENCES BangGiaoVien(MaGiaoVien),
-	MaHocVien INT NOT NULL REFERENCES BANGHOCVIEN(MaHocVien),
+	MaNgoaiNgu INT NOT NULL REFERENCES BangNgoaiNgu(MaNgoaiNgu),
     ThoiGian NVARCHAR(50) NOT NULL,
-    GhiChu NVARCHAR(100)
+    ThongTinLop NVARCHAR(1000) NOT NULL,
+	GhiChu NVARCHAR(100)
 )
 
 --Tao sequence tu dong tang cho ma hoc vien
 Select * from BangHocVien
+
+
 create sequence hocvienSeq
-	start with 1000
+	start with 10000
 	increment by 1;
 
 Insert into BangHocVien
@@ -49,7 +58,7 @@ Insert into BangHocVien
 	SoDienThoai
 )values 
 (
-		 90+ cast (next value for hocvienSeq as int),
+		 0+ cast (next value for hocvienSeq as int),
 		 N'Đỗ Văn Chung',
 		 '06-19-2003',
 		 1,
@@ -124,6 +133,7 @@ BEGIN
 END
 exec ThemMoiHV N'Cao Hoàng Hải', '01-02-2003', 1, N'Địa chỉ nhà của Hải', 0123367281
 
+------
 create procedure updateHocVien
 	@MaHocVien int,
 	@HoTen nvarchar(15),
@@ -159,10 +169,17 @@ BEGIN
 END 
 
  
+
+
+
+
+-- frm moi cua giao vien
 --Tao sequence tu dong tang cho ma giao vien 
 Select * from BangGiaoVien
+
+
 create sequence giaovienSeq
-	start with 1000
+	start with 10000
 	increment by 1;
 
 Insert into BangGiaoVien
@@ -175,7 +192,7 @@ Insert into BangGiaoVien
 	DienThoai
 )values 
 (
-		 10+ cast (next value for giaovienSeq as int),
+		 0+ cast (next value for giaovienSeq as int),
 		 N'Đỗ Như Nhung',
 		 '09-12-1999',
 		 0,
@@ -183,3 +200,272 @@ Insert into BangGiaoVien
 		 0123621182
 )
 
+
+-- Xóa Giáo Viên              EXECUTE CẢ CÁI NÀY NỮA
+create procedure deleteGV
+	@MaGiaoVien int
+AS
+BEGIN
+	DELETE from BangGiaoVien
+	WHERE [MaGiaoVien] = @MaGiaoVien
+END
+
+
+-- tạo cái này để lấy toàn bộ giáo viên và sắp xếp tìm kiếm    EXECUTE LẠI CÁI NÀY VÀO SQL TRƯỚC NHA
+CREATE PROCEDURE SELECTALLGIAOVIEN
+	@tukhoa int
+AS
+	select 
+		MaGiaoVien,
+		HoTen,
+		CONVERT(varchar(10), NgaySinh, 103) as NgaySinh, --định dạng lại ngày sinh thanh dd//mm/yyyy
+		case 
+			when GioiTinh = 1 then 'Nam'
+			else N'Nữ'
+		end as GioiTinh,-- biểu diễn lại giới tính
+		DiaChi,
+		DienThoai
+	from BangGiaoVien
+	where 
+		lower(MaGiaoVien) like '%'+lower(RTRIM(LTRIM(@tukhoa))) + '%'
+		or lower(HoTen) like '%'+lower(RTRIM(LTRIM(@tukhoa))) + '%'
+		or lower(DienThoai) like '%'+lower(RTRIM(LTRIM(@tukhoa))) + '%'
+GO;
+
+
+--tạo stored procedure để thêm mới một GV vào bảng GiaoVien
+
+CREATE PROCEDURE ThemMoiGV
+	--Khai báo danh sách tham số truyền vào
+	@HoTen nvarchar(15),
+	@NgaySinh date,
+	@GioiTinh tinyint,
+	@DiaChi nvarchar(100),
+	@DienThoai nvarchar(10)
+AS
+BEGIN
+	--thêm dữ liệu mới
+	INSERT INTO BangGiaoVien
+	(
+		MaGiaoVien,
+		HoTen,
+		NgaySinh,
+		GioiTinh,
+		DiaChi,
+		DienThoai
+	) 
+	VALUES 
+	(
+	90+ cast (next value for giaovienSeq as int),
+	@HoTen,
+	@NgaySinh,
+	@GioiTinh,
+	@DiaChi,
+	@DienThoai
+	);
+	--kiem tra xem insert da thanh cong hay chua
+	IF @@ROWCOUNT > 0 BEGIN RETURN 1 END
+	ELSE BEGIN RETURN 0 END;
+END
+
+
+create procedure updateGiaoVien
+	@MaGiaoVien int,
+	@HoTen nvarchar(15),
+	@NgaySinh date,
+	@GioiTinh tinyint,
+	@DiaChi nvarchar(100),
+	@DienThoai nvarchar(10)
+AS
+BEGIN
+	update BangGiaoVien
+	set 
+		HoTen = @HoTen,
+		NgaySinh = @NgaySinh,
+		GioiTinh = @GioiTinh,
+		DiaChi = @DiaChi,
+		DienThoai = @DienThoai	
+	where MaGiaoVien = @MaGiaoVien;
+	if @@ROWCOUNT > 0 begin return 1 end
+	else begin return 0 end;
+END
+
+
+create procedure selectGV
+	@MaGiaoVien int
+AS
+BEGIN
+	Select
+		HoTen, convert(varchar(10), NgaySinh,103) as NgaySinh,
+		GioiTinh,
+		DiaChi, DienThoai
+	from BangGiaoVien
+	where MaGiaoVien = @MaGiaoVien;
+END 
+
+select * from BangGiaoVien
+
+
+--frm ngoai ngu
+Select * from BangNgoaiNgu
+
+
+create sequence NgoaiNguSeq
+	start with 1
+	increment by 1;
+
+Insert into BangngoaiNgu
+(
+	MaNgoaiNgu,
+	TenNgoaiNgu
+)values 
+(
+		 0+ cast (next value for NgoaiNguSeq as int),
+		 N'Anh Ngữ'
+)
+
+
+
+create procedure deleteNN
+	@MaNgoaiNgu int
+AS
+BEGIN
+	DELETE from BangNgoaiNgu
+	WHERE [MaNgoaiNgu] = @MaNgoaiNgu
+END
+
+
+
+CREATE PROCEDURE SELECTALLNGOAINGU
+	@tukhoa nvarchar(50)
+AS
+	select 
+		MaNgoaiNgu,
+		TenNgoaiNgu
+	from BangNgoaiNgu
+	where 
+		lower(MaNgoaiNgu) like '%'+lower(RTRIM(LTRIM(@tukhoa))) + '%'
+		or lower(TenNgoaiNgu) like '%'+lower(RTRIM(LTRIM(@tukhoa))) + '%'
+GO;
+
+
+
+
+CREATE PROCEDURE ThemMoiNN
+	@TenNgoaiNgu nvarchar(50)
+AS
+BEGIN
+	INSERT INTO BangNgoaiNgu
+	(
+		MaNgoaiNgu,
+		TenNgoaiNgu
+	) 
+	VALUES 
+	(
+	0+ cast (next value for NgoaiNguSeq as int),
+	@TenNgoaiNgu
+	);
+	IF @@ROWCOUNT > 0 BEGIN RETURN 1 END
+	ELSE BEGIN RETURN 0 END;
+END
+
+
+create procedure updateNgoaiNgu
+	@MaNgoaiNgu int,
+	@TenNgoaiNgu nvarchar(15)
+AS
+BEGIN
+	update BangNgoaiNgu
+	set 
+		TenNgoaiNgu = @TenNgoaiNgu	
+	where MangoaiNgu = @MaNgoaiNgu;
+	if @@ROWCOUNT > 0 begin return 1 end
+	else begin return 0 end;
+END
+
+
+create procedure selectNN
+	@MaNgoaiNgu int
+AS
+BEGIN
+	Select
+		TenNgoaiNgu
+	from BangNgoaiNgu
+	where MaNgoaiNgu = @MaNgoaiNgu;
+END 
+
+
+
+-- frm lop hoc 
+select * from BangLop
+
+CREATE PROCEDURE SELECTALLLOP
+	@tukhoa varchar(50)
+AS
+begin
+	select 
+		1.MaLopHoc,
+		g.HoTen,
+		m.TenNgoaiNgu
+	from BangLop l
+	inner join BangGiaoVien g on l.MaGiaoVien = g.MaGiaoVien
+	inner join BangNgoaiNgu m on l.MaNgoaiNgu = m.MaNgoaiNgu
+	where lower(g.HoTen) like '%'+lower(@TuKhoa)+'%'
+	or lower(m.TenNgoaiNgu) like '%'+lower(@TuKhoa)+'%';
+end
+
+-------
+CREATE PROCEDURE ThemLopHoc
+	@MaNgoaiNgu int,
+	@MaGiaoVien int
+as
+begin 
+	insert into BangLop(MaNgoaiNgu, MaGiaoVien)
+	values(@MaNgoaiNgu, @MaGiaoVien)
+	if @@ROWCOUNT > 0 begin return 1 end
+	else begin return 0 end;
+end
+
+-------
+CREATE PROCEDURE updateLop
+	@MaLop int,
+	@MaNgoaiNgu int,
+	@MaGiaoVien int
+as
+begin
+	update BangLop
+	set MaGiaoVien = @MaGiaoVien,
+		MaNgoaiNgu = @MaNgoaiNgu
+	where MaLop = @MaLop;
+	if @@ROWCOUNT > 0 begin return 1 end
+	else begin return 0 end;
+end
+
+-------
+CREATE PROCEDURE SelectLop
+	@MaLop int 
+as
+begin
+	select MaGiaoVien, MaNgoaiNgu from BangLop where MaLop = @MaLop;
+end
+
+
+create sequence lopSeq
+	start with 0
+	increment by 1;
+
+Insert into BangLop
+(
+	MaLop, TenLop, MaGiaoVien, MaNgoaiNgu, Thoigian, ThongTinLop, GhiChu
+)values 
+(
+		 0+ cast (next value for lopSeq as int),
+		 N'Lớp dạy Anh Ngữ',
+		 10000,
+		 1,
+		 N'Học Trong 2 Tháng',
+		 N'Lớp Tốt',
+		 N'Không có ghi chú'
+)
+
+select * from BangLop

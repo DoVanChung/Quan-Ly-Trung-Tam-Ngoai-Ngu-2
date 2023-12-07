@@ -28,72 +28,51 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button5 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txttimkiem = new System.Windows.Forms.TextBox();
             this.btntimkiem = new System.Windows.Forms.Button();
             this.btnxoa = new System.Windows.Forms.Button();
-            this.btnsua = new System.Windows.Forms.Button();
             this.btnthem = new System.Windows.Forms.Button();
             this.dgvgiaovien = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvgiaovien)).BeginInit();
             this.SuspendLayout();
             // 
-            // button5
+            // txttimkiem
             // 
-            this.button5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(466, 6);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(130, 37);
-            this.button5.TabIndex = 19;
-            this.button5.Text = "Giáo viên";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(171, 9);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(276, 30);
-            this.textBox1.TabIndex = 18;
+            this.txttimkiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txttimkiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttimkiem.Location = new System.Drawing.Point(680, 5);
+            this.txttimkiem.Name = "txttimkiem";
+            this.txttimkiem.Size = new System.Drawing.Size(309, 30);
+            this.txttimkiem.TabIndex = 18;
             // 
             // btntimkiem
             // 
+            this.btntimkiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btntimkiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btntimkiem.Location = new System.Drawing.Point(16, 6);
+            this.btntimkiem.Location = new System.Drawing.Point(525, 1);
             this.btntimkiem.Name = "btntimkiem";
             this.btntimkiem.Size = new System.Drawing.Size(149, 37);
             this.btntimkiem.TabIndex = 17;
             this.btntimkiem.Text = "Tìm kiếm";
             this.btntimkiem.UseVisualStyleBackColor = true;
+            this.btntimkiem.Click += new System.EventHandler(this.btntimkiem_Click);
             // 
             // btnxoa
             // 
-            this.btnxoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnxoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnxoa.Location = new System.Drawing.Point(902, 6);
+            this.btnxoa.Location = new System.Drawing.Point(397, 1);
             this.btnxoa.Name = "btnxoa";
             this.btnxoa.Size = new System.Drawing.Size(102, 37);
             this.btnxoa.TabIndex = 16;
             this.btnxoa.Text = "Xóa";
             this.btnxoa.UseVisualStyleBackColor = true;
-            // 
-            // btnsua
-            // 
-            this.btnsua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnsua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsua.Location = new System.Drawing.Point(795, 6);
-            this.btnsua.Name = "btnsua";
-            this.btnsua.Size = new System.Drawing.Size(102, 37);
-            this.btnsua.TabIndex = 15;
-            this.btnsua.Text = "Sửa";
-            this.btnsua.UseVisualStyleBackColor = true;
+            this.btnxoa.Click += new System.EventHandler(this.btnxoa_Click);
             // 
             // btnthem
             // 
-            this.btnthem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnthem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnthem.Location = new System.Drawing.Point(687, 6);
+            this.btnthem.Location = new System.Drawing.Point(270, 1);
             this.btnthem.Name = "btnthem";
             this.btnthem.Size = new System.Drawing.Size(102, 37);
             this.btnthem.TabIndex = 14;
@@ -106,6 +85,7 @@
             this.dgvgiaovien.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvgiaovien.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvgiaovien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvgiaovien.Location = new System.Drawing.Point(-3, 49);
             this.dgvgiaovien.Name = "dgvgiaovien";
@@ -113,17 +93,27 @@
             this.dgvgiaovien.RowTemplate.Height = 24;
             this.dgvgiaovien.Size = new System.Drawing.Size(1007, 438);
             this.dgvgiaovien.TabIndex = 13;
+            this.dgvgiaovien.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvgiaovien_CellDoubleClick);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 6);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(222, 26);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "Danh Sách Giáo Viên";
             // 
             // frmGV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1001, 492);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txttimkiem);
             this.Controls.Add(this.btntimkiem);
             this.Controls.Add(this.btnxoa);
-            this.Controls.Add(this.btnsua);
             this.Controls.Add(this.btnthem);
             this.Controls.Add(this.dgvgiaovien);
             this.Name = "frmGV";
@@ -136,15 +126,11 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txttimkiem;
         private System.Windows.Forms.Button btntimkiem;
         private System.Windows.Forms.Button btnxoa;
-        private System.Windows.Forms.Button btnsua;
         private System.Windows.Forms.Button btnthem;
         private System.Windows.Forms.DataGridView dgvgiaovien;
-
-
+        private System.Windows.Forms.Label label2;
     }
 }

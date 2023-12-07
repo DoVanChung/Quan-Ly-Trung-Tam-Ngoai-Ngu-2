@@ -53,6 +53,7 @@
             this.dgvsinhvien.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvsinhvien.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvsinhvien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvsinhvien.Location = new System.Drawing.Point(12, 49);
             this.dgvsinhvien.Name = "dgvsinhvien";
@@ -78,7 +79,7 @@
             // 
             this.btntim.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btntim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btntim.Location = new System.Drawing.Point(533, 6);
+            this.btntim.Location = new System.Drawing.Point(648, 6);
             this.btntim.Name = "btntim";
             this.btntim.Size = new System.Drawing.Size(123, 37);
             this.btntim.TabIndex = 9;
@@ -101,9 +102,9 @@
             // 
             this.txttimkiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txttimkiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttimkiem.Location = new System.Drawing.Point(663, 9);
+            this.txttimkiem.Location = new System.Drawing.Point(787, 9);
             this.txttimkiem.Name = "txttimkiem";
-            this.txttimkiem.Size = new System.Drawing.Size(444, 30);
+            this.txttimkiem.Size = new System.Drawing.Size(320, 30);
             this.txttimkiem.TabIndex = 11;
             // 
             // frmSV
