@@ -11,7 +11,7 @@ namespace QuanLyTrungTam
 {
     class database
     {   //chuoi ket noi
-        private string connetionString = @"Data Source=DESKTOP-NGA43BC\DOCHUNG;Initial Catalog=QuanLyTrungTamNgoaiNguV7;Integrated Security=True";
+        private string connetionString = @"Data Source=DESKTOP-NGA43BC\DOCHUNG;Initial Catalog=QuanLyTrungTamNgoaiNguV10;Integrated Security=True";
         //Khai báo một đối tượng SqlConnection
         private SqlConnection conn;
         //Luu csdl

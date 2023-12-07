@@ -62,5 +62,10 @@ namespace QuanLyTrungTam
             Addform(f);
         }
 
+        private void btntrogiup_Click(object sender, EventArgs e)
+        {
+            frmngoaingu f = new frmngoaingu();
+            Addform(f);
+        }
     }
 }
