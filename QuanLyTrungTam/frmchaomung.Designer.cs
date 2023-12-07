@@ -45,7 +45,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(552, 93);
             this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Chào mừng các con vợ đã đến với Trung Tâm Ngoại Ngữ của nhóm 5";
+            this.textBox1.Text = "Chào mừng các bạn đã đến với Trung Tâm Ngoại Ngữ của nhóm 5";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 

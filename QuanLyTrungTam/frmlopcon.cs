@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Text;
@@ -53,7 +54,7 @@ namespace QuanLyTrungTam
             else
             {
                 this.Text = "Cập nhật lớp học";
-                var r = new database().Select("SelectLop '"+malophoc+"'");
+                var r = new database().Select(string.Format("SelectLop '" +malophoc+"'"));
                 cbbGiaoVien.SelectedValue = r["MaGiaoVien"].ToString();
                 cbbNgoaiNgu.SelectedValue = r["MaNgoaiNgu"].ToString();
 
@@ -103,11 +104,11 @@ namespace QuanLyTrungTam
             {
                 if (string.IsNullOrEmpty(malophoc))
                 {
-                    MessageBox.Show("Thêm mới học viên thành công");
+                    MessageBox.Show("Thêm mới Lớp thành công");
                 }
                 else
                 {
-                    MessageBox.Show("Cập nhật thông tin học viên thành công");
+                    MessageBox.Show("Cập nhật thông tin Lớp thành công");
                 }
                 this.Dispose(); 
             }
