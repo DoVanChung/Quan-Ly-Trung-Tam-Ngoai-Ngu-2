@@ -479,7 +479,7 @@ select * from BangLop
 
 ----------------------------------------- Tạo chức năng đăng nhập
 
-
+update BangGiaoVien set matkhau = 123
 
 alter table BangGiaoVien add matkhau varchar(50) default 123
 
@@ -489,18 +489,24 @@ create procedure dangnhap
 	@matkhau varchar(20)
 as
 begin
-	if @loaitaikhoan = 'admin' 
+	if
+		@loaitaikhoan = 'admin' 
 		select * 
-		from TaiKhoan 
+		from TaiKhoan
 		where TenTaiKhoan = @taikhoan
-		and MatKhau = @matkhau
-	else 
-		@loaitaikhoan = 'gv' 
-		select * 
-		from BangGiaoVien
-		where MaGiaoVien = @taikhoan
-		and matkhau = @matkhau;		
-end
+		and MatKhau = @matkhau;
+		else if
+			@loaitaikhoan = 'gv' 
+			select * 
+			from BangGiaoVien
+			where convert(varchar(50),MaGiaoVien) = @taikhoan
+			and matkhau = @matkhau;
+			else 
+			select * 
+			from BangHocVien
+			where convert(varchar(50),MaHocVien) = @taikhoan
+			and SoDienThoai = @matkhau;	
+end;
 
-insert into TaiKhoan values ('1000', 'admin', '123', 'admin')
-dangnhap 'admin', 'admin, '123'
+insert into TaiKhoan values ('1000', 'admin', 'admin', 'admin')
+dangnhap 'gv', '10000', '123' 
