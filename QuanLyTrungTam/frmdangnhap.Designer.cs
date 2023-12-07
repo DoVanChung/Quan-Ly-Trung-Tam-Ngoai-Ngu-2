@@ -42,6 +42,9 @@
             // 
             this.cbbchucvu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbchucvu.FormattingEnabled = true;
+            this.cbbchucvu.Items.AddRange(new object[] {
+            "Quản trị viên",
+            "Giáo viên"});
             this.cbbchucvu.Location = new System.Drawing.Point(152, 32);
             this.cbbchucvu.Name = "cbbchucvu";
             this.cbbchucvu.Size = new System.Drawing.Size(182, 33);
