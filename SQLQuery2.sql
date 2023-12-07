@@ -1,6 +1,6 @@
 ﻿--Tao co so du lieu
-CREATE DATABASE QuanLyTrungTamNgoaiNguV10
-USE QuanLyTrungTamNgoaiNguV10
+CREATE DATABASE QuanLyTrungTamNgoaiNguV12
+USE QuanLyTrungTamNgoaiNguV12
 
 CREATE TABLE TaiKhoan
 (
@@ -39,12 +39,8 @@ CREATE TABLE BangNgoaiNgu
 CREATE TABLE BangLop
 (
     MaLop INT PRIMARY KEY,
-    TenLop NVARCHAR(30) UNIQUE NOT NULL,
     MaGiaoVien INT NOT NULL REFERENCES BangGiaoVien(MaGiaoVien),
-	MaNgoaiNgu INT NOT NULL REFERENCES BangNgoaiNgu(MaNgoaiNgu),
-    ThoiGian NVARCHAR(50) NOT NULL,
-    ThongTinLop NVARCHAR(1000) NOT NULL,
-	GhiChu NVARCHAR(100)
+	MaNgoaiNgu INT NOT NULL REFERENCES BangNgoaiNgu(MaNgoaiNgu)
 )
 
 --Tao sequence tu dong tang cho ma hoc vien
@@ -74,7 +70,7 @@ Insert into BangHocVien
 )
 -- Xóa Học Viên              EXECUTE CẢ CÁI NÀY NỮA
 create procedure deleteHV
-	@MaHocVien int
+	@MaHocVien nvarchar(50)
 AS
 BEGIN
 	DELETE from BangHocVien
@@ -84,7 +80,7 @@ END
 
 -- tạo cái này để lấy toàn bộ học viên và sắp xếp tìm kiếm    EXECUTE LẠI CÁI NÀY VÀO SQL TRƯỚC NHA
 CREATE PROCEDURE SELECTALLHOCVIEN 
-	@tukhoa int
+	@tukhoa nvarchar(50)
 AS
 	select 
 		MaHocVien,
@@ -220,7 +216,7 @@ END
 
 -- tạo cái này để lấy toàn bộ giáo viên và sắp xếp tìm kiếm    EXECUTE LẠI CÁI NÀY VÀO SQL TRƯỚC NHA
 CREATE PROCEDURE SELECTALLGIAOVIEN
-	@tukhoa int
+	@tukhoa nvarchar(50)
 AS
 	select 
 		MaGiaoVien,
@@ -404,6 +400,20 @@ END
 
 
 -- frm lop hoc 
+create sequence lopSeq
+	start with 1
+	increment by 1;
+
+Insert into BangLop
+(
+	MaLop, MaGiaoVien, MaNgoaiNgu
+)values 
+(
+		 0+ cast (next value for lopSeq as int),
+		 10000,
+		 1
+)
+
 select * from BangLop
 
 CREATE PROCEDURE SELECTALLLOP
@@ -411,7 +421,7 @@ CREATE PROCEDURE SELECTALLLOP
 AS
 begin
 	select 
-		1.MaLopHoc,
+		l.MaLop,
 		g.HoTen,
 		m.TenNgoaiNgu
 	from BangLop l
@@ -421,17 +431,20 @@ begin
 	or lower(m.TenNgoaiNgu) like '%'+lower(@TuKhoa)+'%';
 end
 
+
 -------
 CREATE PROCEDURE ThemLopHoc
 	@MaNgoaiNgu int,
 	@MaGiaoVien int
 as
 begin 
-	insert into BangLop(MaNgoaiNgu, MaGiaoVien)
-	values(@MaNgoaiNgu, @MaGiaoVien)
+	insert into BangLop(MaLop, MaNgoaiNgu, MaGiaoVien)
+	values(0+ cast (next value for lopSeq as int),@MaNgoaiNgu, @MaGiaoVien)
 	if @@ROWCOUNT > 0 begin return 1 end
 	else begin return 0 end;
 end
+
+exec ThemLopHoc 
 
 -------
 CREATE PROCEDURE updateLop
@@ -457,25 +470,6 @@ begin
 end
 
 
-create sequence lopSeq
-	start with 0
-	increment by 1;
-
-Insert into BangLop
-(
-	MaLop, TenLop, MaGiaoVien, MaNgoaiNgu, Thoigian, ThongTinLop, GhiChu
-)values 
-(
-		 0+ cast (next value for lopSeq as int),
-		 N'Lớp dạy Anh Ngữ',
-		 10000,
-		 1,
-		 N'Học Trong 2 Tháng',
-		 N'Lớp Tốt',
-		 N'Không có ghi chú'
-)
-
-select * from BangLop
 
 ----------------------------------------- Tạo chức năng đăng nhập
 

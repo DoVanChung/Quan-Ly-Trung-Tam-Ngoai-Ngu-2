@@ -64,5 +64,40 @@ namespace QuanLyTrungTam
                 LoadLop();
             }
         }
+
+        private void btnxoa_Click(object sender, EventArgs e)
+        {
+            int CurrentIndex = dgvlop.CurrentCell.RowIndex;
+            var mathuoc = dgvlop.Rows[CurrentIndex].Cells["MaLop"].Value.ToString();
+            if (MessageBox.Show("Bạn có chắc muốn xóa Lớp này?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
+            {
+                string ma = mathuoc.ToString();
+                List<CustomParameter> lstpara = new List<CustomParameter>();
+                string sql = "deleteLop";
+                {
+
+                    lstpara.Add(new CustomParameter()
+                    {
+                        key = "@MaLop",
+                        value = ma
+                    });
+                }
+                var rs = new database().Excute(sql, lstpara);
+                if (rs == 1)
+                {
+                    if (string.IsNullOrEmpty(ma))
+                    {
+                        MessageBox.Show("Xóa Lớp Thành Công!", "Thông Báo");
+                        LoadLop();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Xóa Lớp Thất Bại!", "Thông Báo");
+                }
+
+            }
+            LoadLop();
+        }
     }
 }

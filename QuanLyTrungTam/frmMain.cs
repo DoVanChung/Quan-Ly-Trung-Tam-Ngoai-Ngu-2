@@ -38,8 +38,6 @@ namespace QuanLyTrungTam
             if (loaitk.Equals("admin"))
             {
                 btnhocvien.Visible = false;
-                btnlop.Visible = false;
-               
             }
             else
             {
@@ -49,6 +47,7 @@ namespace QuanLyTrungTam
 
             frmchaomung f = new frmchaomung();
             Addform(f);
+            f.Show();
         }
 
         private void Addform(Form f)
