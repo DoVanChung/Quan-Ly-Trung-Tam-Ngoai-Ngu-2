@@ -2,6 +2,13 @@
 CREATE DATABASE QuanLyTrungTamNgoaiNguV10
 USE QuanLyTrungTamNgoaiNguV10
 
+CREATE TABLE TaiKhoan
+(
+	MaTaiKhoan NVARCHAR(10) PRIMARY KEY,
+	TenTaiKhoan NVARCHAR(20) NOT NULL UNIQUE,
+	MatKhau NVARCHAR(10) NOT NULL,
+	VaiTro NVARCHAR(30) NOT NULL
+)
 
 CREATE TABLE BangGiaoVien
 (
@@ -469,3 +476,28 @@ Insert into BangLop
 )
 
 select * from BangLop
+
+----------------------------------------- Tạo chức năng đăng nhập
+
+
+
+alter table BangGiaoVien add matkhau varchar(50) default 123
+
+create procedure dangnhap
+	@loaitaikhoan varchar(20),
+	@taikhoan varchar(20),
+	@matkhau varchar(20)
+as
+begin
+	if @loaitaikhoan = 'admin' 
+		select * 
+		from TaiKhoan 
+		where TenTaiKhoan = @taikhoan
+		and MatKhau = @matkhau
+	else 
+		@loaitaikhoan = 'gv' 
+		select * 
+		from BangGiaoVien
+		where MaGiaoVien = @taikhoan
+		and matkhau = @matkhau;		
+end

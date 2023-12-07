@@ -26,9 +26,26 @@ namespace QuanLyTrungTam
         {
             Application.Exit();
         }
-
+        private string taikhoan;
+        private string loaitk;
         private void frmMain_Load(object sender, EventArgs e)
         {
+            var fn = new frmdangnhap();
+            fn.ShowDialog();
+
+            taikhoan = fn.taikhoan;
+            loaitk = fn.loaitk;
+            if (loaitk.Equals("admin"))
+            {
+                btngiaovien.Visible = false;
+                btnngoaingu.Visible = false;
+            }
+            else
+            {
+                btnhocvien.Visible = false;
+                btnlop.Visible = false;
+            }
+
             frmchaomung f = new frmchaomung();
             Addform(f);
         }
@@ -41,31 +58,35 @@ namespace QuanLyTrungTam
             f.FormBorderStyle = FormBorderStyle.None;
             f.Dock = DockStyle.Fill;
             this.dgvmain.Controls.Add(f);
-            f.Show();
+            
         }
 
         private void btnNhanVienTitle_Click_1(object sender, EventArgs e)
         {
             frmGV f = new frmGV();
             Addform(f);
+            f.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             frmSV f = new frmSV();
             Addform(f);
+            f.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             frmlop f = new frmlop();
             Addform(f);
+            f.Show();
         }
 
         private void btntrogiup_Click(object sender, EventArgs e)
         {
             frmngoaingu f = new frmngoaingu();
             Addform(f);
+            f.Show();
         }
     }
 }
