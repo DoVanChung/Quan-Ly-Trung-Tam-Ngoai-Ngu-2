@@ -501,3 +501,6 @@ begin
 		where MaGiaoVien = @taikhoan
 		and matkhau = @matkhau;		
 end
+
+insert into TaiKhoan values ('1000', 'admin', '123', 'admin')
+dangnhap 'admin', 'admin, '123'
