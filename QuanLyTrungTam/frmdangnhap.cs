@@ -58,10 +58,10 @@ namespace QuanLyTrungTam
                 case "Quản trị viên":
                     loaitk = "admin";
                     break;
-                case "Giáo viên":
+                case "Giáo Viên":
                     loaitk = "gv";
                     break;
-            } 
+            }
             #endregion
 
             List<CustomParameter> lst = new List<CustomParameter>()

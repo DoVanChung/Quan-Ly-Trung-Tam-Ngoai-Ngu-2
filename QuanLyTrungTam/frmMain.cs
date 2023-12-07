@@ -37,14 +37,13 @@ namespace QuanLyTrungTam
             loaitk = fn.loaitk;
             if (loaitk.Equals("admin"))
             {
-                btnhocvien.Visible = false;
-                btnlop.Visible = false;
-               
+                btngiaovien.Visible = false;
+                btnngoaingu.Visible = false;
             }
             else
             {
-                btngiaovien.Visible = false;
-                btnngoaingu.Visible = false;
+                btnhocvien.Visible = false;
+                btnlop.Visible = false;
             }
 
             frmchaomung f = new frmchaomung();
